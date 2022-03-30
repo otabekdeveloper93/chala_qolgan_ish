@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ======= header ======= -->
+    <header>
+        <div class="carusel-sec" id="carusel">
+            <div class="slider">
+                <img src="./img/Poster.jpg">
+                <div class="description-box">
+                    <h1>John Wick 3 : Parabellum</h1>
+                    <p class="mt-4">
+                        <span><i class='bx bx-star'></i>  7.1</span>
+                        <span><i class='bx bxs-calendar' ></i> 2011</span>
+                        <span><i class='bx bx-stopwatch'></i> 10 min</span>
+                    </p>
+                    <p>John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.</p>
+                    <button class="btn-danger"><i class='bx bx-play-circle'></i>Watch trailer</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- =======navbar ======== -->
+        <nav id="navbar">
+            <div class="logo">
+                <img src="./img/tv.png">
+                <span>MovieBox</span>
+            </div>
+            <div class="search">
+                <form>
+                    <input id="search-input" type="search" placeholder="What do you to watch?">
+                </form>
+                <i class='bx bx-search'></i>
+            </div>
+            <div class="menu-toggle">
+                <span class="signin">Sign In</span>
+                <i class='bx bx-menu' ></i>
+                <button class="btn-button"><i class='bx bx-heart'></i></button>
+            </div>    
+        </nav>
+    
+            
+        <div class="indicator_slider">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+    </header>
+    <div class="search_container">
+        <form>
+            <input type="text" placeholder="Name Search">
+            <input type="text" placeholder="Rating Search">
+            <input type="number" placeholder="Year Search">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <!-- ======== featured movie ========= -->
+    <div id="page" class="featured_movie mt-5">
+        <div class="container">
+            <i id="left" class='bx bx-chevron-left' ></i>
+            <i id="right" class='bx bx-chevron-right' ></i>
+            <h2 class="mt-4 mb-4">Featured Movie</h2>
+            <div id="movie" class="movie row">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= modal ======= -->
+    
+    <div class="modal_info">
+
+    </div>
+
+    <!-- ======== change lists ========= -->
+
+    <div class="change_list">
+        <button class="btn btn-danger">X</button>
+        <h3 class="mt-3">List Movie</h3>
+        <div id="list-movie" class="list_move">
+            
+        </div>
+    </div>
+    <!-- <div class="modal_content">
+        <span class="span btn-danger">X</span>
+        <h3 class="movie-title">movie title</h3>
+        <div class="modal-box row">
+            <div class="modal-img col-sm-12"><img src="http://i3.ytimg.com/vi/4hZi5QaMBFc/hqdefault.jpg"></div>
+            <div class="info-box col-sm-12">                <p class="info mt-4">
+                <span><i class='bx bx-star'></i>7.1</span>
+                <span><i class='bx bxs-calendar' ></i>2011</span>
+                <span><i class='bx bx-stopwatch'></i>10 min</span>
+            </p>
+            <p>${items.categories}</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam repellat, laudantium veritatis adipisci ducimus nihil explicabo vitae possimus error tenetur natus corporis cumque voluptate enim mollitia exercitationem magnam reiciendis.</p>
+            <a class="btn btn-primary" href="#">show on IMDb</a>
+            <button type="button" class="btn btn-primary"><i class='bx bx-bookmark'></i>Bookmark</button></div>
+        </div>
+    </div> -->
+
+    <script src="./js-file/movies.js"></script>
+    <script src="./js-file/moveList.js"></script>
+    <script src="./js-file/carusel.js"></script>
+    <script src="./js-file/modal.js"></script>
+    <script src="./js-file/search.js"></script>
+   
+</body>
+</html>
